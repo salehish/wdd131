@@ -1,0 +1,141 @@
+body{
+    margin:0%;
+}
+
+header{
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(7, 7, 121);
+}
+
+nav{
+    justify-content: center;
+    background-color:rgb(41, 6, 107);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:aquamarine;
+}
+
+header h1{
+    background-color: rgb(5, 3, 88);
+    padding-left: 18%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    align-items: center;
+    color: white;
+}
+
+main{
+    display:grid;
+    grid-template-columns: 0.8fr 0.3fr;
+    grid-template-rows: 1fr;
+}
+
+section h1{
+    background-color: rgb(3, 3, 82);
+    margin-top: 0%;
+    margin-bottom: 0%;
+    justify-content: space-evenly;
+    display: flex;
+    border-radius: 10px;
+    color: white;
+}
+
+.card1{
+    grid-column:1 / 2;
+    grid-row: 1 / 2;
+    margin:  20px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.card2{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin:  20px;
+    border-style: solid;
+    border-radius: 10px;
+    height: inherit;
+}
+
+.paragraph{
+    display: flex;
+    flex-direction: row;
+    padding-left: 3%;
+    padding-right: 5%;
+    padding-top: auto;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+img{
+padding-left: 2%;
+padding-top: 2%;
+width: 150px;
+height: 150px;
+}
+
+.Resources{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding-left: 10%;
+    margin: 20px; 
+    height: 1/2;
+}
+
+.Resources a{
+    text-decoration:none ;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+.images img{
+    height: 100px;
+    width: 150px; ;
+    padding-bottom: 10%;
+    padding-right: 5%
+}
+
+footer{
+    background-color: rgb(4, 5, 85);
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom:2% ;
+    color: white;
+}
+
+h3{
+    padding-bottom: 0%;
+}
+
+.Uganda p{
+    position: right;
+    width: 600px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 3%;
+    padding-right: 5%;
+    padding-top: auto;
+
+}
