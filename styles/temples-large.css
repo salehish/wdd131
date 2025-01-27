@@ -1,0 +1,26 @@
+@media (min-width: 640px) {
+    figure {
+        grid-template-columns: repeat(3, 1fr); 
+        grid-auto-rows: minmax(200px, auto);
+    }
+}
+@media(min-width:640px){
+    img {
+        grid-template-columns: repeat(3, 1fr); 
+        grid-auto-rows: minmax(200px, auto); 
+    }
+    }
+
+@media (min-width: 960px) {
+    figure {
+        grid-template-columns: repeat(3, 1fr); 
+        grid-auto-rows: minmax(200px, auto); 
+    }
+    nav {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none; 
+}
+}
