@@ -89,22 +89,24 @@ footer {
     text-align: center;
 }
 
+/* Media query for mobile screens */
 @media (max-width: 599px) {
     main {
         background: url('images/uganda2.jpg') no-repeat center center; 
         background-size: cover;
         padding-bottom: 0; 
-        text-align: left; 
+        text-align: center; /* Center the text on mobile for better visibility */
     }
 
     .date, .weather {
-        position: initial; 
+        position: static; /* Change to static to stack them */
         margin: 10px 0; 
-        text-align: left; 
+        text-align: center; /* Center the date and weather on mobile */
     }
 
     section.h {
         padding: 10px; 
-        text-align: left;
+        text-align: center; /* Keep text centered for mobile */
+        width: 100%; /* Allow section to take full width */
     }
 }
