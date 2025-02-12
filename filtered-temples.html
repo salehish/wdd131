@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Temple Album</title>
+    <meta name="description" content="A WDD website showing temple pictures">
+    <meta name="author" content="Saleh Ntege">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/filtered-temples.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1 class="logo">Temple Album</h1>
+            </div>
+            <nav class="nav-links">
+                <ul id="nav-links">
+                    <li><a href="#" id="home">Home</a></li>
+                    <li><a href="#" id="old">Old</a></li>
+                    <li><a href="#" id="new">New</a></li>
+                    <li><a href="#" id="large">Large</a></li>
+                    <li><a href="#" id="small">Small</a></li>
+                </ul>
+            </nav>
+            <div id="hamburger" class="hamburger-menu" onclick="toggleMenu()"></div>
+        </div>
+    </header>
+    <main id="main-content">
+        <h2>Home</h2>
+        <div id="temple-cards" class="gallery"></div>
+    </main>
+    <footer>
+        <p>&copy;2025 🌸 Saleh Ntege 🌸 Uganda</p>
+        <p id="lastModified"></p> 
+    </footer>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+    
+</body>
+</html>
