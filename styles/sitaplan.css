@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #2196F3; /* Blue */
+    --secondary-color: #4CAF50; /* Green */
+    --background-color: #f0f0f0; /* Light Gray */
+    --text-color: #333; /* Dark Gray */
+    --accent-color: #FFC107; /* Yellow */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    font-family: 'Segoe UI', sans-serif; /* Added a different font for headings */
+}
+
+h1 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.color-example {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+
+.color-example-primary { background-color: var(--primary-color); }
+.color-example-secondary { background-color: var(--secondary-color); }
+.color-example-background { background-color: var(--background-color); }
+.color-example-accent { background-color: var(--accent-color); }
+
+.wireframe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wireframe-image {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+@media (min-width: 768px) {
+    .wireframe-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .wireframe-image {
+        width: 45%; /* Adjust width for larger screens */
+        max-width: none;
+    }
+}
+/* Added a simple style for the logo (assuming you'll use an image) */
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+

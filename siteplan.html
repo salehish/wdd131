@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Site Plan</title>
+    <style>
+        /* Color Palette */
+        :root {
+            --primary-color: #2196F3; /* Blue */
+            --secondary-color: #4CAF50; /* Green */
+            --background-color: #f0f0f0; /* Light Gray */
+            --text-color: #333; /* Dark Gray */
+            --accent-color: #FFC107; /* Yellow */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-color);
+            font-family: 'Segoe UI', sans-serif; /* Added a different font for headings */
+        }
+
+        h1 {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .color-example {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-right: 10px;
+            border: 1px solid #000;
+        }
+
+        .color-example-primary { background-color: var(--primary-color); }
+        .color-example-secondary { background-color: var(--secondary-color); }
+        .color-example-background { background-color: var(--background-color); }
+        .color-example-accent { background-color: var(--accent-color); }
+
+        .wireframe-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .wireframe-image {
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            max-width: 100%; /* Make images responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        @media (min-width: 768px) {
+            .wireframe-container {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .wireframe-image {
+                width: 45%; /* Adjust width for larger screens */
+                max-width: none;
+            }
+        }
+        /* Added a simple style for the logo (assuming you'll use an image) */
+        .logo {
+            font-size: 2em;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1> My Website Site Plan</h1>
+
+    <div class="section">
+        <h2>Salehish</h2>
+        <p>
+            <span class="logo">Tech Solutions Hub</span>
+        </p>
+        <p>Description: The name represents the central online resource for the technology solutions, news and tutorials also will cater to both tech enthusiasts and professionals.
+             It is designed to be a comprehensive resource to all.
+        </p>
+        <p>Optional domain availability: techsolutionshub.com (available)</p>
+    </div>
+
+    <div class="section">
+        <h2>Site Purpose</h2>
+        <p>The most vital purpose of the Tech Solutions Hub is to provide a friendly and informative online platform for:
+        </p>
+        <ul>
+            <li>Offering tutorials, guides, and how-to articles on various tech topics.</li>
+            <li>Creating a community forum where users can share knowledge and interact.</li>
+            <li>Sharing the latest news and trends in technology.</li>
+            <li>Providing reviews of tech products and services.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Scenarios</h2>
+        <ul>
+            <li>
+                <p><strong>Scenario 1:</strong> "I am a beginner in web development, Where can I find tutorials to get started with HTML and CSS?"</p>
+            </li>
+            <li>
+                <p><strong>Scenario 2:</strong> "I am looking to buy a new laptop use. Are there any recent reviews of the latest models and what are the best options in my budget?"</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Color Schema </h2>
+        <p>
+            The color schema will to enhance the website's visual appeal and user experience.
+        </p>
+        <ul>
+            <li>
+                <strong>Primary Color:</strong> <span class="color-example color-example-primary"></span> #2196F3 (Blue) - Used for headings, primary buttons, and interactive elements.
+            </li>
+            <li>
+                <strong>Secondary Color:</strong> <span class="color-example color-example-secondary"></span> #4CAF50 (Green) - Used for call-to-action buttons, and highlights.
+            </li>
+            <li>
+                <strong>Background Color:</strong> <span class="color-example color-example-background"></span> #f0f0f0 (Light Gray) - Used as the overall background.
+            </li>
+            <li>
+                <strong>Accent Color:</strong> <span class="color-example color-example-accent"></span> #FFC107 (Yellow) - Used for highlighting key information and alerts.
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Typography</h2>
+        <p>The following fonts will be used to ensure readability and visual consistency across the website.</p>
+        <ul>
+            <li>
+                <strong>Headings (h1, h2, h3):</strong> 'Segoe UI', sans-serif (Clean and modern look).
+            </li>
+            <li>
+                <strong>Body Text (paragraphs):</strong> 'Arial', sans-serif (Simple and easy-to-read).
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Wireframe</h2>
+        <div class="wireframe-container">
+            <div>
+                <h3>Mobile View</h3>
+                <img src="wireframe-mobile.png" alt="Mobile Wireframe" class="wireframe-image">
+            </div>
+            <div>
+                <h3>Desktop View</h3>
+                <img src="wireframe-desktop.png" alt="Desktop Wireframe" class="wireframe-image">
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>CSS (Supporting Files)</h2>
+        <p>Supporting CSS files will be used to style the website.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Testing</h2>
+        <p>The site plan document will use HTML and CSS validation tools such as the W3C validator, accessibility checkers such as WAVE, and color contrast checkers. The site will use SEO tools and performance tools to optimize the site.</p>
+    </div>
+
+</body>
+</html>
